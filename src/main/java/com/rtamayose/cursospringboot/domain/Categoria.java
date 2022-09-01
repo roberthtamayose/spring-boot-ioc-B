@@ -59,7 +59,7 @@ public class Categoria implements Serializable{
 		}
 
 		public void setProdutos(List<Produto> produtos) {
-			produtos = produtos;
+			this.produtos = produtos;
 		}
 
 		@Override
