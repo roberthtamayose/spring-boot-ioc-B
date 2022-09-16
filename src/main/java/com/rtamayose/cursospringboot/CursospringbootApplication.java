@@ -63,6 +63,12 @@ public class CursospringbootApplication implements CommandLineRunner {
 		
 		Categoria cat1  = new Categoria(null, "Informática");
 		Categoria cat2  = new Categoria(null, "Escritorio");
+		Categoria cat3  = new Categoria(null, "Esporte");
+		Categoria cat4  = new Categoria(null, "Culinaria");
+		Categoria cat5  = new Categoria(null, "Roupas");
+		Categoria cat6  = new Categoria(null, "Alimentos");
+		Categoria cat7  = new Categoria(null, "Festas");
+		Categoria cat8  = new Categoria(null, "Bebidas");
 		
 		Produto p1 = new Produto(null, "computador", 200.00);
 		Produto p2 = new Produto(null, "Impressora", 800.00);
@@ -86,7 +92,7 @@ public class CursospringbootApplication implements CommandLineRunner {
 		est1.getCidades().addAll(Arrays.asList(cid1,cid3));
 		est2.getCidades().addAll(Arrays.asList(cid2));
 		 
-		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
+		categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8));
 		produtoRepository.saveAll(Arrays.asList(p1,p2,p3));
 		
 		estadoRepository.saveAll(Arrays.asList(est1,est2));
